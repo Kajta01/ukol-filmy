@@ -1,16 +1,21 @@
 import React from 'react';
+
+import {movies} from './movies.js'
 import { render } from 'react-dom';
 import './style.css';
 
-import camera from './img/camera.svg';
 
-const App = () => (
-  <>
-    <h1>
-      <img class="logo" src={camera} alt="Logo" />
-      V našem kině právě uvádíme
-    </h1>
-  </>
+import Header from './components/Header/Header';
+import MovieList from './components/MovieList/MovieList';
+
+const App = () => {
+  return(
+    <>
+      <Header/>
+      <MovieList movies={movies}/>
+      
+    </>
 );
+}
 
 render(<App />, document.querySelector('#app'));
