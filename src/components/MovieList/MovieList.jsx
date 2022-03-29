@@ -4,18 +4,20 @@ import Movie from '../Movie/Movie';
 
 const MovieList = ({movies}) => {
     return (
-        movies.map( (movie) =>(
+        <div className='MovieList'>
+        {movies.map( (movie) =>(
             <Movie
             key = {movie.title}
             title={movie.title}
-            poste={movie.poste}
+            poster={movie.poster}
             year={movie.year}
             rating={movie.rating}
             director={movie.director}
             genre={movie.genre}
             cast={movie.cast}
             />
-           ))
+           ))}
+        </div>
     );
 }
 

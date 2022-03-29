@@ -1,0 +1,11 @@
+.MovieList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Movie{
+    background-color: white;
+    display: flex;
+}
+.Actors{
+    display: flex;
+}
