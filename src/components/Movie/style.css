@@ -5,7 +5,13 @@
 .Movie{
     background-color: white;
     display: flex;
+    width: 30%;
 }
 .Actors{
     display: flex;
 }
+img{
+    width: 30%;
+
+}
+/* ráda bych si s tím vyhrála více, ale jsem v procesu stěhování tak nemám moc času a sil :(*/
